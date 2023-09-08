@@ -52,6 +52,7 @@ body{
     color:white;
     display: grid;
     place-content: center;
+    margin-top:1rem;
 }
 .link a{
     color:rgb(255, 177, 33);
