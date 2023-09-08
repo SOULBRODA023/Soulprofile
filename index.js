@@ -17,7 +17,7 @@ const dayOfWeek = options[localDate.getUTCDay()];
 today.textContent = `${dayOfWeek}`
 
 //current UTC Time
-const currentUTCTime = localDate.getTime();
+const currentUTCTime = localDate.toUTCString();
 todayTime.textContent = currentUTCTime;
 
 
