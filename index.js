@@ -1,7 +1,6 @@
 function Updated(){
 let todayTime = document.querySelector(".current__time");
 let today = document.querySelector(".current__day");
-const localDate = new Date();
 const options = [
     "Sunday",
     "Monday",
@@ -13,11 +12,11 @@ const options = [
 ];
 
 //current Day of the Week 
-const dayOfWeek = options[localDate.getUTCDay()];
+const dayOfWeek = options[new Date().getUTCDay()];
 today.textContent = `${dayOfWeek}`
 
 //current UTC Time
-const currentUTCTime = localDate.toUTCString();
+const currentUTCTime = new Date().getTime();
 todayTime.textContent = currentUTCTime;
 
 
